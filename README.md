@@ -1,0 +1,2 @@
+# BAEKJOON-GOLD-CHALLENGE
+목표는 골드다..

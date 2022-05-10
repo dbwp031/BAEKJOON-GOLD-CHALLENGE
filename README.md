@@ -30,7 +30,7 @@ https://github.com/tony9402/baekjoon<br>
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dbwp031)](https://solved.ac/dbwp031/)
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dbwp031)](https://solved.ac/yoy07030/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=yoy07030)](https://solved.ac/yoy07030/)
 
 ## 🔐 문제
 * [solved.ac Class](https://solved.ac/class)

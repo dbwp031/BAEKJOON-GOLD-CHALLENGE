@@ -11,10 +11,6 @@ https://github.com/tony9402/baekjoon<br>
 
 ## 👨‍💻 팀원
 
-![유제's solved.ac stats](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=dbwp031)
-
-![수연's solved.ac stats](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=yoy07030)
-
 <table>
 <tr height="200px">
         <td align="center" width="200px">
@@ -34,6 +30,9 @@ https://github.com/tony9402/baekjoon<br>
     </tr>
   </table>
 
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dbwp031)](https://solved.ac/dbwp031/)
+
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=dbwp031)](https://solved.ac/yoy07030/)
 
 ## 🔐 문제
 * [solved.ac Class](https://solved.ac/class)

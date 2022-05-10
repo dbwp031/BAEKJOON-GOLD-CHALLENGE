@@ -18,14 +18,12 @@ https://github.com/tony9402/baekjoon<br>
             <br />
             <a href="https://github.com/dbwp031">이유제</a>
 			<br />
-           <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=dbwp031" />
         </td>
         <td align="center" width="200px">
             <a href="https://github.com/josushell"><img height="150px" width="150px" src="https://avatars.githubusercontent.com/u/63590121?v=4"/></a>
             <br />
             <a href="https://github.com/josushell">조수연</a>
 			<br />
-           <img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=yoy07030" />
         </td>
     </tr>
   </table>

@@ -1,4 +1,4 @@
-# 2022-05-challenge
+# BAEKJOON-GOLD-CHALLENGE
 5월 목표는 백준 골드다. 실패 시 벌금 5만원
 
 ## ✏️ 규칙

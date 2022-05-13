@@ -1,4 +1,5 @@
-// 1003 피보나치 함수
+// 1003 피보나치 함수: dynamic programming
+
 #include <vector>
 #include <stdio.h> // 시간 제한 위해 printf, scanf 사용함
 using namespace std;

@@ -3,44 +3,36 @@
 # 이는 벨만-포드 알고리즘을 사용해 푸는 문제이다. : 가중치에 음수가 존재할 때, 한 노드에 대한 전체 노드의 최단 거리들
 # 다익스트라와 다르게 가중치가 음수여도 사용가능하다.
 # 매번 모든 간선을 확인하여 노드간 최단 거리를 확인해주어야 한다.
-
+# 이게 모든 정점의 시작점을 0으로 설정하면 모든 노드에 대한 순환을 파악할 수 있네? 대신 최단거리는 파악하지 못하고, 순환만 파악할 수 있네?
+# 왤까?ㅋㅋ
 tc = int(input())
 for _ in range(tc):
     n,m,w = map(int,input().split())
-    if n == 1:
-        print("NO")
+    edges = []
+    for _ in range(m):
+        a,b,c=map(int,input().split())
+        edges.append([a,b,c])
+        edges.append([b,a,c])
+    for _ in range(w):
+        a,b,c = map(int,input().split())
+        edges.append([a,b,-c])
+    INF = int(1e9)
+    distance = [0]*(n+1)
+    # 어느 노드에서 하더라도 n번째 업데이트 있따 => 순환 있다.
+    orbit = False
+    distance[1]=0                     
+    for node in range(1,n+1):
+        for edge in edges:
+            s,e,dist = edge
+            if distance[s]!=INF and distance[e]>distance[s]+dist:
+                distance[e]=distance[s]+dist
+                if node == n:
+                    orbit = True
+    if orbit:
+        print("YES")
     else:
-        data = [[1e9]*(n+1) for _ in range(n+1)]
-        edges = []
-        for _ in range(m):
-            a,b,c = map(int,input().split())
-            edges.append([a,b,c])
-            edges.append([b,a,c])
-        for _ in range(w):
-            a,b,c = map(int,input().split())
-            edges.append([a,b,-c])
-
-        temp = [int(1e9)]*(n+1)
-        canWorm = False
-        for i in range(1,n+1):
-            distance = temp[:]
-            distance[i]=0
-            for a in range(1,n+1):
-                for b in range(len(edges)):
-                    cur_node = edges[b][0]
-                    next_node = edges[b][1]
-                    edge_cost = edges[b][2]
-
-                    if distance[cur_node]!= 1e9 and distance[next_node]>distance[cur_node]+edge_cost:
-                        distance[next_node]= distance[cur_node]+edge_cost
-                        if a == n:
-                            canWorm = True
-            if canWorm:
-                break
-        if canWorm:
-            print("YES")
-        else:
-            print("NO")                        
+        print("NO")
+    print(distance)
 
 
 # from collections import deque
